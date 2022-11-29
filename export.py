@@ -11,10 +11,10 @@ from torch.utils.mobile_optimizer import optimize_for_mobile
 
 import models
 from models.experimental import attempt_load, End2End
-from utils.activations import Hardswish, SiLU
-from utils.general import set_logging, check_img_size
-from utils.torch_utils import select_device
-from utils.add_nms import RegisterNMS
+from yolo7.activations import Hardswish, SiLU
+from yolo7.general import set_logging, check_img_size
+from yolo7.torch_utils import select_device
+from yolo7.add_nms import RegisterNMS
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
