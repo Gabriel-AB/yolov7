@@ -6,8 +6,8 @@ from copy import deepcopy
 sys.path.append('./')  # to run '$ python *.py' files in subdirectories
 logger = logging.getLogger(__name__)
 import torch
-from models.common import *
-from models.experimental import *
+from yolo7.models.common import *
+from yolo7.models.experimental import *
 from yolo7.autoanchor import check_anchor_order
 from yolo7.general import make_divisible, check_file, set_logging
 from yolo7.torch_utils import time_synchronized, fuse_conv_and_bn, model_info, scale_img, initialize_weights, \
@@ -169,7 +169,7 @@ class IDetect(nn.Module):
             z = self.convert(z)
             out = (z, )
         elif self.concat:
-            out = torch.cat(z, 1)            
+            out = torch.cat(z, 1)
         else:
             out = (torch.cat(z, 1), x)
 
