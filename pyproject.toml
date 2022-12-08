@@ -11,6 +11,12 @@ dependencies = [
     "matplotlib>=3.2.2",
     "onnx",
 ]
+maintainers = [
+    {name="gabriel-ab"}
+]
+authors = [
+    {name="WongKinYiu"}
+]
 
 [tool.setuptools.packages.find]
 include = ["yolo7.**"]
