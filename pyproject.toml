@@ -4,7 +4,7 @@ requires = ["setuptools", "wheel"]
 
 [project]
 name = "yolo7"
-version = "1.0.1"
+version = "1.0.2"
 dependencies = [
     "torch>=1.7.0,!=1.12.0",
     "torchvision>=0.8.1,!=0.13.0",
@@ -21,6 +21,3 @@ maintainers = [
 authors = [
     {name="WongKinYiu"}
 ]
-
-[tool.setuptools.packages.find]
-include = ["yolo7"]
